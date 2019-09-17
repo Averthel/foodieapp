@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title th:text="${item.name}">Pizza Dolczegusto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-8 offset-lg-2">
+            <img src="../static/img/piiza-dolczegusto.jpg" th:src="@{${item.imgUrl}}" class="img-fluid" alt="Pizza dolczegusto"/>
+                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                    <h1 class="text-center" th:text="${item.name}">Pizza Dolczegusto</h1>
+                    <h3 class="text-center" th:text="|Cena ${item.price}zł|">Cena: 23zł</h3>
+                    <p class="text-justify" th:text="${item.description}">Pizza Dolczegusto to klasyka włoskiej kuchni. W naszym wydaniu serwujemy pizzę na cienkim cieście z
+                       ręcznie przygotowanym sosem pomidorowym i oryginalnym serem mozarella</p>
+                 </div>
+         </div>
+    </div>
+</body>
+</html>

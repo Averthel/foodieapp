@@ -9,8 +9,10 @@ public class Item {
     private Long id;
     private Double price;
     private String name;
+    private String shortDescription;
     @Column(length = 1024)
     private String description;
+    private String imgUrl;
 
     public Long getId() {
         return id;
@@ -36,11 +38,27 @@ public class Item {
         this.name = name;
     }
 
+    public String getShortDescription() {
+        return shortDescription;
+    }
+
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
+    }
+
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 }
