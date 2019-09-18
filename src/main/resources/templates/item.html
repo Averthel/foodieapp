@@ -16,7 +16,10 @@
                     <h3 class="text-center" th:text="|Cena ${item.price}zł|">Cena: 23zł</h3>
                     <p class="text-justify" th:text="${item.description}">Pizza Dolczegusto to klasyka włoskiej kuchni. W naszym wydaniu serwujemy pizzę na cienkim cieście z
                        ręcznie przygotowanym sosem pomidorowym i oryginalnym serem mozarella</p>
-                 </div>
+                    <a href="#" th:href="@{/zamowienie/dodaj(itemId=${item.id})}" class="btn btn-primary d-block">
+                        Dodaj zamówienie
+                    </a>
+                </div>
          </div>
     </div>
 </body>
